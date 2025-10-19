@@ -46,4 +46,10 @@ public class Calculator
     {
         return Math.pow(getFIRST_NUMBER(), getSECOND_NUMBER());
     }
+
+    // modulo two numbers - return the remainder of the first number divided by the second
+    double mod()
+    {
+        return getFIRST_NUMBER() % getSECOND_NUMBER();
+    }
 }
