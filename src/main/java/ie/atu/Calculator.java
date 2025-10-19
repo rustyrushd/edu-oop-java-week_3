@@ -26,4 +26,9 @@ public class Calculator
         return getFIRST_NUMBER() + getSECOND_NUMBER();
     }
 
+    double sub()
+    {
+        return getFIRST_NUMBER() - getSECOND_NUMBER();
+    }
+
 }
