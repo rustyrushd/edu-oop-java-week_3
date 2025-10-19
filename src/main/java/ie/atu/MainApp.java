@@ -19,5 +19,6 @@ public class MainApp
         Calculator calc1 = new Calculator(firstNumber, secondNumber);
         System.out.println(calc1.getFIRST_NUMBER() + " + " + calc1.getSECOND_NUMBER() + " = " + calc1.add());
         System.out.println(calc1.getFIRST_NUMBER() + " - " + calc1.getSECOND_NUMBER() + " = " + calc1.sub());
+        System.out.println(calc1.getFIRST_NUMBER() + " * " + calc1.getSECOND_NUMBER() + " = " + calc1.mul());
     }
 }
