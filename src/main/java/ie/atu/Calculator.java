@@ -31,4 +31,9 @@ public class Calculator
         return getFIRST_NUMBER() - getSECOND_NUMBER();
     }
 
+    double mul()
+    {
+        return getFIRST_NUMBER() * getSECOND_NUMBER();
+    }
+
 }
