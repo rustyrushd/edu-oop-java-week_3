@@ -36,4 +36,8 @@ public class Calculator
         return getFIRST_NUMBER() * getSECOND_NUMBER();
     }
 
+    double div()
+    {
+        return getFIRST_NUMBER() / getSECOND_NUMBER();
+    }
 }
