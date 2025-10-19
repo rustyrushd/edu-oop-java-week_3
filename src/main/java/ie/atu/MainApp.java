@@ -21,5 +21,6 @@ public class MainApp
         System.out.println(calc1.getFIRST_NUMBER() + " - " + calc1.getSECOND_NUMBER() + " = " + calc1.sub());
         System.out.println(calc1.getFIRST_NUMBER() + " * " + calc1.getSECOND_NUMBER() + " = " + calc1.mul());
         System.out.println(calc1.getFIRST_NUMBER() + " / " + calc1.getSECOND_NUMBER() + " = " + calc1.div());
+        System.out.println(calc1.getFIRST_NUMBER() + " ^ " + calc1.getSECOND_NUMBER() + " = " + calc1.pow());
     }
 }
