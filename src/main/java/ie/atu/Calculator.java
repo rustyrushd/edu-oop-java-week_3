@@ -40,4 +40,10 @@ public class Calculator
     {
         return getFIRST_NUMBER() / getSECOND_NUMBER();
     }
+
+    // exponent two numbers - raise the first number to the power of the second
+    double pow()
+    {
+        return Math.pow(getFIRST_NUMBER(), getSECOND_NUMBER());
+    }
 }
