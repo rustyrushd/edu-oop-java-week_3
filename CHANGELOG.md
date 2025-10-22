@@ -1,16 +1,22 @@
 # CHANGELOG
 
-## [1.0.1] - 2025-10-20
-
-### Changed
-
-- Moved user selection out of main
-
 ## [1.0.0] - 2025-10-20
 
 ### Added
 
 - Operation selection feature
+
+## [0.7.0] - 2025-10-20
+
+### Added
+
+- Modulo feature
+
+## [0.6.0] - 2025-10-20
+
+### Added
+
+- Power feature
 
 ## [0.5.0] - 2025-10-20
 
