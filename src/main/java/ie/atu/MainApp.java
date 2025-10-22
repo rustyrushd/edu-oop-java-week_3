@@ -1,3 +1,14 @@
+/*
+ * A simple demo calculator app that operates (+, -, *, /) on two numbers.
+ * The app reads two numbers and a choice of operation from the user via an object created from the Scanner class.
+ * It then prints the result. Some errors are handled.
+ *
+ * Author: rgm
+ *
+ * [1.0.1] - 2025-10-15
+ *
+ */
+
 package ie.atu;
 
 import java.util.Scanner;
