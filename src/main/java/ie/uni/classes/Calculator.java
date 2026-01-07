@@ -1,4 +1,4 @@
-package ie.atu;
+package ie.uni.classes;
 
 public class Calculator
 {
@@ -29,39 +29,29 @@ public class Calculator
     }
 
     // selects operation for two passed numbers and prints result
-    void operation()
-    {
-        double result = 0;
-
-        switch (getUSER_CHOICE()) {
-            case "+":
-                result = add();
-                break;
-            case "-":
-                result = sub();
-                break;
-            case "*":
-                result = mul();
-                break;
-            case "/":
+    void operation() {
+        String result = switch (getUSER_CHOICE()) {
+            case "+" -> Double.toString(add());
+            case "-" -> Double.toString(sub());
+            case "*" -> Double.toString(mul());
+            case "/" -> {
                 if (getSECOND_NUMBER() == 0) {
                     System.out.println("To infinity and beyond, as the second number = 0!");
+                    yield "\uD83D\uDE80";
+                } else {
+                    yield Double.toString(div());
                 }
-                else {
-                    result = div();
-                }
-                break;
-            case "^":
-                result = pow();
-                break;
-            case "%":
-                result = mod();
-                break;
-            default:
-                System.out.println("Invalid operation selected, please type \"+\" to add, \"-\" to subtract, \"*\" " +
-                        "to multiply or \"/\" to divide next time.");
-        }
-        System.out.println(getFIRST_NUMBER() + " " + getUSER_CHOICE() + " " + getSECOND_NUMBER() + " = " + result);
+            }
+            case "^" -> Double.toString(pow());
+            case "%" -> Double.toString(mod());
+            default -> {
+                System.out.println("Invalid operation selected, please type \"+\" to add, \"-\" "
+                    + "to subtract, \"*\" to multiply or \"/\" to divide next time.");
+                yield "\uD83E\uDD37???";
+            }
+        };
+        System.out.println(getFIRST_NUMBER() + " " + getUSER_CHOICE() + " " + getSECOND_NUMBER()
+            + " = " + result);
     }
 
     double add()

@@ -9,7 +9,7 @@
  *
  */
 
-package ie.atu;
+package ie.uni.classes;
 
 import java.util.Scanner;
 
