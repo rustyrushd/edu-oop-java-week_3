@@ -31,8 +31,8 @@ public class Calculator {
       case "*" -> Double.toString(mul());
       case "/" -> {
         if (getSECOND_NUMBER() == 0) {
-          System.out.println("To infinity and beyond, as the second number = 0!");
-          yield "\uD83D\uDE80";
+          throw new ArithmeticException("Division by zero: To infinity and beyond, "
+              + "as the second number = 0! " + "🚀");
         } else {
           yield Double.toString(div());
         }
@@ -40,9 +40,12 @@ public class Calculator {
       case "^" -> Double.toString(pow());
       case "%" -> Double.toString(mod());
       default -> {
-        System.out.println("Invalid operation selected, please type \"+\" to add, \"-\" "
-            + "to subtract, \"*\" to multiply or \"/\" to divide next time.");
-        yield "\uD83E\uDD37???";
+        result = "🤷";
+        System.err.println("Your expression:\n" + getFIRST_NUMBER() + " " + getUSER_CHOICE()
+            + " " + getSECOND_NUMBER() + " = " + result);
+        throw new IllegalArgumentException("Invalid operation selected, please type \"+\" to add, "
+            + "\"-\" to subtract, \"*\" to multiply, \"/\" to divide, (\"^\") to exponent or " +
+            "(\"%\") to modulo next time.");
       }
     };
     System.out.println(getFIRST_NUMBER() + " " + getUSER_CHOICE() + " " + getSECOND_NUMBER()
